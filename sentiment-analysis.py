@@ -7,12 +7,8 @@ from pymongo import MongoClient
 app = Flask(__name__)
 CORS(app)
 
-# mongodb+srv://doadmin:Q60nlM48hF5239cK@db-mongodb-sgp1-90661-5821cd72.mongo.ondigitalocean.com/admin?tls=true&authSource=admin&replicaSet=db-mongodb-sgp1-90661
-# mongodb+srv://doadmin:<replace-with-your-password>@db-mongodb-sgp1-90661-5821cd72.mongo.ondigitalocean.com/sentiment_analysis?replicaSet=db-mongodb-sgp1-90661&tls=true&authSource=admin
-# Awik@123@Wok
-
 # Database setup
-client = MongoClient('mongodb+srv://doadmin:Q60nlM48hF5239cK@db-mongodb-sgp1-90661-5821cd72.mongo.ondigitalocean.com/sentiment_analysis?replicaSet=db-mongodb-sgp1-90661&tls=true&authSource=admin')
+client = MongoClient('mongodb+srv://doadmin:p2h9Iq501GLWv476@sentiment-analysis-db-2b22deb1.mongo.ondigitalocean.com/sentiment_analysis?tls=true&authSource=admin&replicaSet=sentiment-analysis-db')
 db = client.sentiment_analysis
 collection = db.history
 
