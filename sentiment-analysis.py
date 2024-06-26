@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Database setup
-client = MongoClient('mongodb+srv://doadmin:p2h9Iq501GLWv476@sentiment-analysis-db-2b22deb1.mongo.ondigitalocean.com/sentiment_analysis?tls=true&authSource=admin&replicaSet=sentiment-analysis-db')
+client = MongoClient('mongodb://localhost:27017')
 db = client.sentiment_analysis
 collection = db.history
 
